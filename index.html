@@ -480,6 +480,14 @@
 
   .services-grid .service-card:last-child:nth-child(odd) { grid-column:1 / -1; }
 
+  /* HERO LABEL: clearer and easier to read */
+  .hero-eyebrow { color:var(--sage-dark); font-weight:400; font-size:0.98rem; letter-spacing:0.14em; line-height:1.75; }
+  .hero-eyebrow .hero-brand { display:inline-block; font-size:1.75rem; letter-spacing:0.12em; color:var(--ink); line-height:1.3; margin-bottom:0.2rem; }
+  @media(max-width:900px){
+    .hero-eyebrow { font-size:0.84rem; letter-spacing:0.1em; }
+    .hero-eyebrow .hero-brand { font-size:1.45rem; }
+  }
+
   /* PRICES */
   .price-list { margin-top:3rem; max-width:620px; }
   .price-row { display:flex; justify-content:space-between; align-items:baseline; gap:1.5rem; padding:1rem 0; border-bottom:1px solid var(--border); }
@@ -559,7 +567,7 @@
 <section id="home">
   <div class="hero-glow"></div>
   <div class="hero-text">
-    <p class="hero-eyebrow"><span>Seeds of Hope<br>Eulogies, Celebration Tributes &amp; Legacy Writing<br>By Winsome M. Reid</span></p>
+    <p class="hero-eyebrow"><span><span class="hero-brand">Seeds of Hope</span><br>Eulogies, Celebration Tributes &amp; Legacy Writing<br>By Winsome M. Reid</span></p>
     <h1 class="hero-title">Giving Voice to What <em>Your Heart</em> Wants to Say</h1>
     <p class="hero-sub">When words feel impossible to find, when emotions run too deep, or a moment demands meaning you cannot quite capture, I am here to help.</p>
     <a href="#contact" class="btn-primary">Leave your details</a>
@@ -583,7 +591,7 @@
     <div class="services-grid">
       <div class="service-card reveal">
         <div class="service-number">01</div>
-        <h3 class="service-name">Personal Funeral Tributes</h3>
+        <h3 class="service-name">Eulogies &amp; Memorial Tributes</h3>
         <p class="service-desc">Honouring the memory of loved ones with words that capture their essence and bring comfort to those who grieve. A meaningful tribute that helps you and others celebrate a life lived.</p>
       </div>
       <div class="service-card reveal">
